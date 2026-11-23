@@ -1,16 +1,14 @@
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/56341569?v=4" width="112" style="border-radius:50%" alt="avatar" />
-
 <h1>陈明欢 · chenminghuan-cn</h1>
 
 <p><b>AI 应用工程师 · Agent 平台 / Product Engineer</b><br>
 产品出身，现在自己写系统 —— 从架构、前后端到 K8s 运维一个人走完。</p>
 
 <p>
-  <a href="mailto:chenminghuan.cn@gmail.com"><img src="https://img.shields.io/badge/email-chenminghuan.cn@gmail.com-EA4335?logo=gmail&logoColor=white" alt="email"></a>
+  <a href="mailto:chenminghuan.cn@gmail.com"><img src="https://img.shields.io/badge/chenminghuan.cn@gmail.com-EA4335?logo=gmail&logoColor=white" alt="email"></a>
   <a href="https://chenminghuan.com"><img src="https://img.shields.io/badge/blog-chenminghuan.com-4f46e5" alt="blog"></a>
-  <img src="https://img.shields.io/badge/武汉-中国-555" alt="location">
+  <img src="https://img.shields.io/badge/武汉-555" alt="location">
 </p>
 
 </div>
@@ -27,11 +25,27 @@
 
 ## 开源项目
 
-| 项目 | 说明 |
-|---|---|
-| **[job-hunter-hub](https://github.com/chenminghuan-cn/job-hunter-hub)** <br><sub>Python · FastAPI · React · SQLite</sub> | 个人**应聘中台**：8 个招聘渠道的信息由自己的 Agent 采集进来，中台负责幂等入库、四套状态机、JD 匹配预审、按岗位定制简历（浏览版高亮 / 导出干净 PDF）。外放接口用 A2A JSON-RPC + 每 Agent 独立 HMAC 签名 + 按权限分发工具。<br><img src="https://raw.githubusercontent.com/chenminghuan-cn/job-hunter-hub/main/docs/screenshots/dashboard.png" width="620"> |
-| **[pi-web](https://github.com/chenminghuan-cn/pi-web)** <br><sub>JavaScript · Node</sub> | Codex 风格的 Web UI for π：在浏览器里浏览、fork、驱动你的 agent 会话，不用守终端。 |
-| **[pi-session-index](https://github.com/chenminghuan-cn/pi-session-index)** <br><sub>JavaScript · SQLite</sub> | 给 π 的 JSONL 会话建 SQLite 索引：406 个会话从 5.9s 降到 8ms，且完全不改动 π 本身。 |
+### [job-hunter-hub](https://github.com/chenminghuan-cn/job-hunter-hub)
+`Python` `FastAPI` `React` `SQLite` · 个人**应聘中台**
+
+8 个招聘渠道（猎聘 / BOSS / 领英 / 小红书 / X / 脉脉 / 即刻 / 公众号）的岗位由自己的 Agent 采集进来，
+中台负责幂等入库、四套状态机（岗位 / 公司 / 联系人 / 渠道）、JD 匹配预审、按岗位定制简历。
+外放接口用 A2A JSON-RPC + 每 Agent 独立 HMAC 签名 + 按权限分发工具——采集 Agent 碰不到联系人，
+舆情/预审 Agent 改不了采集侧的原始事实。
+
+<img src="https://raw.githubusercontent.com/chenminghuan-cn/job-hunter-hub/main/docs/screenshots/dashboard.png" width="800">
+
+---
+
+### [pi-web](https://github.com/chenminghuan-cn/pi-web)
+`JavaScript` `Node` · Codex 风格的 Web UI for π
+
+在浏览器里浏览、fork、驱动你的 agent 会话，不用守终端。
+
+### [pi-session-index](https://github.com/chenminghuan-cn/pi-session-index)
+`JavaScript` `SQLite` · 给 π 的 JSONL 会话建索引
+
+406 个会话从 **5.9s 降到 8ms**，且完全不改动 π 本身。
 
 ## 技术栈
 
